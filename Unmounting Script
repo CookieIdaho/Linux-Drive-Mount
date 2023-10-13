@@ -1,0 +1,9 @@
+#!/bin/bash
+
+MOUNT_HOME=/media/fullnode #Change fullnode to your username
+
+for i in {1..168}  #Change 168 to how many driuves you want to unmount
+do
+  echo "Mounting: $i"
+  sudo umount $MOUNT_HOME/$i
+done
