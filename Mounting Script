@@ -1,0 +1,11 @@
+#!/bin/bash
+
+for i in {1..168}     #Change 168 to how many drives you have
+do
+  echo "mounting $i"
+  sudo mount -L $i /media/fullnode/$i            #Change fullnode to your username 
+
+  sudo chmod 755 /media/fullnode/$i               #Change fullnode to your username 
+
+  sudo chown fullnode:fullnode /media/fullnode/$i #Change fullnode to your username 
+done
