@@ -1,0 +1,8 @@
+#!/bin/bash
+
+cd /media/fullnode/
+for i in {1..168}
+do
+  echo "$i"
+  sudo mkdir $i
+done
